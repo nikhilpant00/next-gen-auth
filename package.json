@@ -6,11 +6,11 @@
   "author": "Ashutosh Hathidara",
   "version": "1.0.0",
   "scripts": {
-    "build": "npm install && gatsby build",
+    "build": "npm install && gatsby build --openssl-legacy-provider build",
     "clean": "gatsby clean",
     "develop": "gatsby develop",
     "serve": "gatsby serve",
-    "start": "gatsby develop"
+    "start": "gatsby develop --openssl-legacy-provider start"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
