@@ -3,14 +3,9 @@
 // import '../Login/index.scss'
 // import Lottie from "react-lottie";
 
-
 // import logo from '../../assets/images/msoni52_A_creative_and_visually_appealing_logo_design_for_a_Voi_d667ecc5-d9d5-45f3-9b3c-1d8ea7539cb8.png';
 // import bot from '../../assets/lottieFiles/bot.json';
 // import medal from '../../assets/lottieFiles/medal.json'
-
-
-
-
 
 // function Landing({isLogin}) {
 //     const defaultOptions1 = {
@@ -332,29 +327,26 @@
 
 // export default Landing
 
-import React from 'react'
+import React from "react";
 import Lottie from "react-lottie";
 
-import bot from '../../assets/lottieFiles/bot.json';
-import logo from '../../assets/images/msoni52_A_creative_and_visually_appealing_logo_design_for_a_Voi_d667ecc5-d9d5-45f3-9b3c-1d8ea7539cb8.png';
-
-
+import bot from "../../assets/lottieFiles/bot.json";
+import logo from "../../assets/images/msoni52_A_creative_and_visually_appealing_logo_design_for_a_Voi_d667ecc5-d9d5-45f3-9b3c-1d8ea7539cb8.png";
 
 function Landing() {
-
-   const defaultOptions2 = {
-      loop: true,
-      autoplay: true,
-      animationData: bot,
-      rendererSettings: {
-        preserveAspectRatio: "xMidYMid slice",
-      },
-    };
+  const defaultOptions2 = {
+    loop: true,
+    autoplay: true,
+    animationData: bot,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
 
   return (
     <div>
-      <div className="Landing-page" style={{}}>
-        <div style={{ height: "85vh" }}>
+      <div className="Landing-page" style={{ backgroundColor: "#131621" }}>
+        <div style={{ height: "100vh" }}>
           <div
             style={{
               height: "10vh",
@@ -384,7 +376,7 @@ function Landing() {
               display: "flex",
               height: "75vh",
               minHeight: "",
-              marginTop: "15vh",
+              // marginTop: "15vh",
             }}
           >
             <div
@@ -430,16 +422,16 @@ function Landing() {
                     }}
                   >
                     <Lottie
-                    options={defaultOptions2}
-                    height={80}
-                    width={80}
-                  style={{
-                    fontSize: "10px",
-                    margin: "0 20px",
-                    textAlign: "center",
-                    marginTop: ".6rem",
-                  }}
-                />
+                      options={defaultOptions2}
+                      height={80}
+                      width={80}
+                      style={{
+                        fontSize: "10px",
+                        margin: "0 20px",
+                        textAlign: "center",
+                        marginTop: ".6rem",
+                      }}
+                    />
                   </span>
                   <h4>High Quality Details</h4>
                   <p
@@ -472,9 +464,7 @@ function Landing() {
                       marginBottom: "1.2rem",
                       marginTop: "16px",
                     }}
-                  >
-                    
-                  </span>
+                  ></span>
                   <h4>High Quality Details</h4>
                   <p
                     style={{
@@ -506,9 +496,7 @@ function Landing() {
                       marginBottom: "1.2rem",
                       marginTop: "16px",
                     }}
-                  >
-                    
-                  </span>
+                  ></span>
                   <h4>High Quality Details</h4>
                   <p
                     style={{
@@ -540,9 +528,7 @@ function Landing() {
                       marginBottom: "1.2rem",
                       marginTop: "16px",
                     }}
-                  >
-                    
-                  </span>
+                  ></span>
                   <h4>High Quality Details</h4>
                   <p
                     style={{
@@ -574,9 +560,7 @@ function Landing() {
                       marginBottom: "1.2rem",
                       marginTop: "16px",
                     }}
-                  >
-                    
-                  </span>
+                  ></span>
                   <h4>High Quality Details</h4>
                   <p
                     style={{
@@ -608,9 +592,7 @@ function Landing() {
                       marginBottom: "1.2rem",
                       marginTop: "16px",
                     }}
-                  >
-                    
-                  </span>
+                  ></span>
                   <h4>High Quality Details</h4>
                   <p
                     style={{
@@ -663,4 +645,4 @@ function Landing() {
   );
 }
 
-export default Landing
+export default Landing;

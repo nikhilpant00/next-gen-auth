@@ -5,6 +5,7 @@ import { DevicePage } from "../components/devicePage";
 import { Colors } from "../components/colors";
 import Landing from "../components/Landing";
 import Login from "../components/Login";
+import SignUp from "../components/SignUp";
 // import Login from "../components/Login"
 
 export const query = graphql`
@@ -69,8 +70,8 @@ function extractPage(allData, id) {
 const IndexPage = ({ data }) => {
   // console.log(data);
   const ids = ["airpod", "watch", "iphone", "ipad", "mac", "mouse"];
-  var componentsToRender = [<Landing />, <Login />, <Landing/>];
-  var backgroundColors = ["yellow", "blue", "red"];
+  var componentsToRender = [<Landing />, <SignUp />, <Login />];
+  var backgroundColors = ["black", "pink", "red"];
   // for (var i = 0; i < 1; i++) {
   //   componentsToRender.push(<DevicePage data={extractPage(data, ids[i])} />);
   //   backgroundColors.push(Colors[ids[i]]["background"]);
